@@ -6,13 +6,13 @@ The canonical WCLO address used by the SoySwap interface is `0xF5AD6F6EDeC824C7f
 
 Results are cached for 5 minutes (or 300 seconds).
 
-## [`/v2/summary`](https://api.soy.finance/api/v2/summary)
+## [`/summary`](https://api.soy.finance/api/summary)
 
 Returns data for the top ~1000 SoySwap pairs, sorted by reserves. 
 
 ### Request
 
-`GET https://api.soy.finance/api/v2/summary`
+`GET https://api.soy.finance/api/summary`
 
 ### Response
 
@@ -32,13 +32,13 @@ Returns data for the top ~1000 SoySwap pairs, sorted by reserves.
 }
 ```
 
-## [`/v2/tokens`](https://api.soy.finance/api/v2/tokens)
+## [`/tokens`](https://api.soy.finance/api/tokens)
 
 Returns the tokens in the top ~1000 pairs on SoySwap, sorted by reserves.
 
 ### Request
 
-`GET https://api.soy.finance/api/v2/tokens`
+`GET https://api.soy.finance/api/tokens`
 
 ### Response
 
@@ -57,13 +57,13 @@ Returns the tokens in the top ~1000 pairs on SoySwap, sorted by reserves.
 }
 ```
 
-## [`/v2/tokens/0x...`](https://api.soy.finance/api/v2/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65)
+## [`/tokens/0x...`](https://api.soy.finance/api/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65)
 
 Returns the token information, based on address.
 
 ### Request
 
-`GET https://api.soy.finance/api/v2/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65`
+`GET https://api.soy.finance/api/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65`
 
 ### Response
 
@@ -79,13 +79,13 @@ Returns the token information, based on address.
 }
 ```
 
-## [`/v2/pairs`](https://api.soy.finance/api/v2/pairs)
+## [`/pairs`](https://api.soy.finance/api/pairs)
 
 Returns data for the top ~1000 SoySwap pairs, sorted by reserves.
 
 ### Request
 
-`GET https://api.soy.finance/api/v2/pairs`
+`GET https://api.soy.finance/api/pairs`
 
 ### Response
 
