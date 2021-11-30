@@ -8,7 +8,7 @@ Results are cached for 5 minutes (or 300 seconds).
 
 ## [`/summary`](https://api.soy.finance/api/summary)
 
-Returns data for the top ~1000 SoySwap pairs, sorted by reserves. 
+Returns data for the top ~20 SoySwap pairs, sorted by reserves. 
 
 ### Request
 
@@ -34,7 +34,7 @@ Returns data for the top ~1000 SoySwap pairs, sorted by reserves.
 
 ## [`/tokens`](https://api.soy.finance/api/tokens)
 
-Returns the tokens in the top ~1000 pairs on SoySwap, sorted by reserves.
+Returns the tokens in the top ~20 pairs on SoySwap, sorted by reserves.
 
 ### Request
 
@@ -81,7 +81,7 @@ Returns the token information, based on address.
 
 ## [`/pairs`](https://api.soy.finance/api/pairs)
 
-Returns data for the top ~1000 SoySwap pairs, sorted by reserves.
+Returns data for the top ~20 SoySwap pairs, sorted by reserves.
 
 ### Request
 
