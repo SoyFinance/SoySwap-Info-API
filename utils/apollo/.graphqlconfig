@@ -1,0 +1,15 @@
+{
+  "name": "SoySwap Exchange LITE",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "SoySwap Exchange LITE": {
+        "url": "http://65.21.54.13:8000/subgraphs/name/soyfinance",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

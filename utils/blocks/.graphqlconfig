@@ -1,0 +1,15 @@
+{
+  "name": "Binance Smart Chain Blocks",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Binance Smart Chain Blocks": {
+        "url": "http://65.21.54.13:8000/subgraphs/name/blocks",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
