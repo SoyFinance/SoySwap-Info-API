@@ -6,7 +6,7 @@ The canonical WCLO address used by the SoySwap interface is `0xF5AD6F6EDeC824C7f
 
 Results are cached for 5 minutes (or 300 seconds).
 
-## [`/summary`](https://api.soy.finance/api/summary)
+## [`/summary`](https://api.soy.finance/v1/summary)
 
 Returns data for the top ~20 SoySwap pairs, sorted by reserves. 
 
