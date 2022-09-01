@@ -4,7 +4,7 @@
   "extensions": {
     "endpoints": {
       "SoySwap Exchange LITE": {
-        "url": "http://65.21.54.13:8000/subgraphs/name/soyfinance",
+        "url": "https://03.callisto.network/subgraphs/name/soyswap",
         "headers": {
           "user-agent": "JS GraphQL"
         },
