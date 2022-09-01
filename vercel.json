@@ -3,12 +3,12 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/api/tokens",
-      "destination": "/api/tokens"
+      "source": "/api/v1/tokens",
+      "destination": "/api/v1/tokens"
     },
     {
-      "source": "/api/tokens/:address",
-      "destination": "/api/tokens/tokens"
+      "source": "/api/v1/tokens/:address",
+      "destination": "/api/v1/tokens/tokens"
     }
   ],
   "headers": [

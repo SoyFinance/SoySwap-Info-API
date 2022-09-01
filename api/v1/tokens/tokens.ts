@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { getTokenByAddress } from "../../utils";
-import { return200, return400, return500 } from "../../utils/response";
+import { getTokenByAddress } from "../../../utils";
+import { return200, return400, return500 } from "../../../utils/response";
 import { getAddress } from "@ethersproject/address";
 
 export default async function (req: VercelRequest, res: VercelResponse): Promise<void> {
