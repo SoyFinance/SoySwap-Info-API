@@ -29,7 +29,7 @@ Endpoints are based on filename inside the `api/` folder.
 
 ```shell
 # api/pairs.ts
-curl -X GET 'localhost:3000/api/pairs'
+curl -X GET 'localhost:3000/v1/pairs'
 
 # ...
 ```

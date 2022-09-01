@@ -12,7 +12,7 @@ Returns data for the top ~20 SoySwap pairs, sorted by reserves.
 
 ### Request
 
-`GET https://api.soy.finance/api/summary`
+`GET https://api.soy.finance/v1/summary`
 
 ### Response
 
@@ -32,13 +32,13 @@ Returns data for the top ~20 SoySwap pairs, sorted by reserves.
 }
 ```
 
-## [`/tokens`](https://api.soy.finance/api/tokens)
+## [`/tokens`](https://api.soy.finance/v1/tokens)
 
 Returns the tokens in the top ~20 pairs on SoySwap, sorted by reserves.
 
 ### Request
 
-`GET https://api.soy.finance/api/tokens`
+`GET https://api.soy.finance/v1/tokens`
 
 ### Response
 
@@ -57,13 +57,13 @@ Returns the tokens in the top ~20 pairs on SoySwap, sorted by reserves.
 }
 ```
 
-## [`/tokens/0x...`](https://api.soy.finance/api/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65)
+## [`/tokens/0x...`](https://api.soy.finance/v1/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65)
 
 Returns the token information, based on address.
 
 ### Request
 
-`GET https://api.soy.finance/api/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65`
+`GET https://api.soy.finance/v1/tokens/0x9FaE2529863bD691B4A7171bDfCf33C7ebB10a65`
 
 ### Response
 
@@ -79,13 +79,13 @@ Returns the token information, based on address.
 }
 ```
 
-## [`/pairs`](https://api.soy.finance/api/pairs)
+## [`/pairs`](https://api.soy.finance/v1/pairs)
 
 Returns data for the top ~20 SoySwap pairs, sorted by reserves.
 
 ### Request
 
-`GET https://api.soy.finance/api/pairs`
+`GET https://api.soy.finance/v1/pairs`
 
 ### Response
 
