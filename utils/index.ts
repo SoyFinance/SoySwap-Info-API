@@ -1,5 +1,6 @@
 import BigNumber from "bignumber.js";
 import { BLACKLIST } from "./constants/blacklist";
+import { WHITELIST } from "./constants/whitelist";
 import { client } from "./apollo/client";
 import { TOP_PAIRS, PAIRS_VOLUME_QUERY, TOKEN_BY_ADDRESS } from "./apollo/queries";
 import { getBlockFromTimestamp } from "./blocks/queries";
@@ -56,7 +57,7 @@ export async function getTopPairs(): Promise<MappedDetailedPair[]> {
     query: TOP_PAIRS,
     variables: {
       limit: TOP_PAIR_LIMIT,
-      excludeTokenIds: BLACKLIST,
+      includeTokenIds: WHITELIST,
     },
     fetchPolicy: "cache-first",
   });

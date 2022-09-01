@@ -31,12 +31,12 @@ export const TOP_PAIRS = gql`
     derivedUSD
   }
 
-  query TopPairs($limit: Int!, $excludeTokenIds: [String!]!) {
+  query TopPairs($limit: Int!, $includeTokenIds: [String!]!) {
     pairs(
       first: $limit
       orderBy: reserveUSD
       orderDirection: desc
-      where: { token0_not_in: $excludeTokenIds, token1_not_in: $excludeTokenIds }
+      where: { token0_in: $includeTokenIds, token1_in: $includeTokenIds }
     ) {
       id
       token0 {
