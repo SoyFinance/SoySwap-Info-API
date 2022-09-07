@@ -6,6 +6,7 @@ export const PAIRS_VOLUME_QUERY = gql`
       id
       volumeToken0
       volumeToken1
+      volumeUSD
     }
   }
 `;
@@ -36,7 +37,7 @@ export const TOP_PAIRS = gql`
       first: $limit
       orderBy: reserveUSD
       orderDirection: desc
-      where: { token0_in: $includeTokenIds, token1_in: $includeTokenIds }
+      where: { token0_in: $includeTokenIds, token1_in: $includeTokenIds, name_not_contains: "unknown" }
     ) {
       id
       token0 {
@@ -51,6 +52,7 @@ export const TOP_PAIRS = gql`
       volumeToken1
       reserveCLO
       reserveUSD
+      volumeUSD
     }
   }
 `;

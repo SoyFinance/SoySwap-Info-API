@@ -85,17 +85,26 @@ export async function getTopPairs(): Promise<MappedDetailedPair[]> {
 
   const yesterdayVolumeIndex =
     pairVolumes?.reduce<{
-      [pairId: string]: { volumeToken0: BigNumber; volumeToken1: BigNumber };
+      [pairId: string]: { volumeToken0: BigNumber; volumeToken1: BigNumber; volumeUSD: BigNumber };
     }>((memo, pair) => {
       memo[pair.id] = {
         volumeToken0: new BigNumber(pair.volumeToken0),
         volumeToken1: new BigNumber(pair.volumeToken1),
+        volumeUSD: new BigNumber(pair.volumeUSD)
       };
       return memo;
     }, {}) ?? {};
 
   return (
-    pairs?.map(
+    pairs?.filter(
+      (pair) => {
+        const yesterday_volume = yesterdayVolumeIndex[pair.id].volumeUSD
+        const previous_24h_volume_usd = new BigNumber(pair.volumeUSD).minus(yesterday_volume)
+        if (previous_24h_volume_usd.isGreaterThan(100)){
+          return pair
+        }
+    }
+      ).map(
       (pair): MappedDetailedPair => {
         const yesterday = yesterdayVolumeIndex[pair.id];
 

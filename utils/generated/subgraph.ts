@@ -665,7 +665,7 @@ export type PairsVolumeQuery = (
   { readonly __typename?: 'Query' }
   & { readonly pairVolumes: ReadonlyArray<(
     { readonly __typename?: 'Pair' }
-    & Pick<Pair, 'id' | 'volumeToken0' | 'volumeToken1'>
+    & Pick<Pair, 'id' | 'volumeToken0' | 'volumeToken1' | 'volumeUSD'>
   )> }
 );
 
@@ -697,7 +697,7 @@ export type TopPairsQuery = (
   { readonly __typename?: 'Query' }
   & { readonly pairs: ReadonlyArray<(
     { readonly __typename?: 'Pair' }
-    & Pick<Pair, 'id' | 'reserve0' | 'reserve1' | 'volumeToken0' | 'volumeToken1' | 'reserveCLO' | 'reserveUSD'>
+    & Pick<Pair, 'id' | 'reserve0' | 'reserve1' | 'volumeToken0' | 'volumeToken1' | 'reserveCLO' | 'reserveUSD' | 'volumeUSD'>
     & { readonly token0: (
       { readonly __typename?: 'Token' }
       & TokenInfoFragment
