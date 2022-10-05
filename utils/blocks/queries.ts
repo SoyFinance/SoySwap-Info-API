@@ -26,7 +26,7 @@ export async function getBlockFromTimestamp(timestamp: number): Promise<string |
     variables: {
       timestamp: timestamp,
     },
-    fetchPolicy: "cache-first",
+    fetchPolicy: "network-only",
   });
   return result?.data?.blocks?.[0]?.number;
 }

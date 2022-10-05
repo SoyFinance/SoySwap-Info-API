@@ -32,7 +32,7 @@ export async function getTokenByAddress(address: string): Promise<Token> {
     variables: {
       id: address,
     },
-    fetchPolicy: "cache-first",
+    fetchPolicy: "network-only",
   });
 
   if (tokenErrors && tokenErrors.length > 0) {
@@ -59,7 +59,7 @@ export async function getTopPairs(): Promise<MappedDetailedPair[]> {
       limit: TOP_PAIR_LIMIT,
       includeTokenIds: WHITELIST,
     },
-    fetchPolicy: "cache-first",
+    fetchPolicy: "network-only",
   });
 
   if (topPairsErrors && topPairsErrors.length > 0) {
@@ -76,7 +76,7 @@ export async function getTopPairs(): Promise<MappedDetailedPair[]> {
       pairIds: pairs.map((pair) => pair.id),
       blockNumber: +firstBlock,
     },
-    fetchPolicy: "cache-first",
+    fetchPolicy: "network-only",
   });
 
   if (yesterdayVolumeErrors && yesterdayVolumeErrors.length > 0) {
